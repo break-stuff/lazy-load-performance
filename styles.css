@@ -1,3 +1,7 @@
+:not(:defined) {
+  visibility: hidden;
+}
+
 html {
   font-family: sans-serif;
   font-size: 16px;
