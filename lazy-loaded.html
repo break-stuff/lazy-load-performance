@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy-Loader - Without Lazy-Loader</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/themes/light.css" />
+</head>
+<body>
+  <nav>
+    <a href="./index.html">Without Lazy-Loading</a>
+    <a href="./prefetched.html">Without Lazy-Loading (prefetched)</a>
+    <a href="./lazy-loaded.html">With Lazy-Loading</a>
+    <a href="./lazy-prefetched.html">With Lazy-Loading (prefetched)</a>
+  </nav>
+  <main>
+    <h1>Without Lazy-Loading</h1>
+    <p>
+      <sl-button variant="default">Default</sl-button>
+      <sl-button variant="primary">Primary</sl-button>
+      <sl-button variant="success">Success</sl-button>
+      <sl-button variant="neutral">Neutral</sl-button>
+      <sl-button variant="warning">Warning</sl-button>
+      <sl-button variant="danger">Danger</sl-button>
+    </p>
+    <h2>Form:</h2>
+    <p>
+      <form>
+        <sl-select label="Select example">
+          <sl-option value="option-1">Option 1</sl-option>
+          <sl-option value="option-2">Option 2</sl-option>
+          <sl-option value="option-3">Option 3</sl-option>
+          <sl-option value="option-4">Option 4</sl-option>
+          <sl-option value="option-5">Option 5</sl-option>
+          <sl-option value="option-6">Option 6</sl-option>
+        </sl-select>
+        <sl-input label="Input example"></sl-input>
+      </form>
+    </p>
+    <h2>Tabs:</h2>
+    <p>
+      <sl-tab-group>
+        <sl-tab slot="nav" panel="general">General</sl-tab>
+        <sl-tab slot="nav" panel="custom">Custom</sl-tab>
+        <sl-tab slot="nav" panel="advanced">Advanced</sl-tab>
+        <sl-tab slot="nav" panel="disabled" disabled>Disabled</sl-tab>
+      
+        <sl-tab-panel name="general">This is the general tab panel.</sl-tab-panel>
+        <sl-tab-panel name="custom">This is the custom tab panel.</sl-tab-panel>
+        <sl-tab-panel name="advanced">This is the advanced tab panel.</sl-tab-panel>
+        <sl-tab-panel name="disabled">This is a disabled tab panel.</sl-tab-panel>
+      </sl-tab-group>
+    </p>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/button/button.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/select/select.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/option/option.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/input/input.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/tab/tab.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/tab-group/tab-group.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/components/tab-panel/tab-panel.js"></script>
+</body>
+</html>
